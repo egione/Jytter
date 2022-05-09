@@ -1,7 +1,7 @@
 /*
  * Jytter
- * Version 5
- * December 15, 2019
+ * Version 6
+ * May 9, 2022
  * http://jytter.blogspot.com/
  *
  * Copyright (c) 2012-2019 Russell Leidich
@@ -64,7 +64,7 @@ true_random_password_printf(uint32_t true_random_char_count){
 /*
 Print out an alphanumeric true random password. Avoid special characters that could be unacceptable in some cases; let the user add them manually.
 */
-  uint8_t character;
+  uint16_t character;
   jytter_scratch_space_t jytter_scratch_space;
   uint32_t true_random;
 
