@@ -1,10 +1,10 @@
 ;
 ; Jytter
-; Version 5
-; December 15, 2019
+; Version 11
+; June 5, 2026
 ; http://jytter.blogspot.com/
 ;
-; Copyright (c) 2012-2019 Russell Leidich
+; Copyright (c) 2012-2026 Russell Leidich
 ;
 ; Permission is hereby granted, free of charge, to any person obtaining
 ; a copy of this software and associated documentation files (the

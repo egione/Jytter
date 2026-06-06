@@ -1,6 +1,6 @@
 Jytter
-Version 5
-December 15, 2019
+Version 11
+June 5, 2026
 http://jytter.blogspot.com
 
 Jytter, a Userspace True Random Number Generator Without IO
@@ -11,7 +11,13 @@ http://jytter.blogspot.com
 
 This document is only concerned with installing and running Jytter.
 
-For security reasons, prebuilt binaries are no longer provided.
+Prebuilt demo binaries for X64 (AMD64) Linux platforms are available on Arweave at the links below, wherein "_unix_emulation" implies the use of the getentropy() function from unistd.h, instead of actual Jytter. Both executables were built in an unmodified live OS installation environment that never connected to the internet. This process was repeated for hash comparison after a power cycle. The hashes were then verified again after downloading back from Arweave.
+
+demo
+https://arweave.net/Q9k5YtTgnId6T5WqspU82aCnTPIlm-3Z4985KhM0WqU
+
+demo_unix_emulation
+https://arweave.net/QrbPW3rNNo1MsSLBjKu_Q9HKfWNYn0MZZB__Kah_f2w
 
 Here is how to build the demo:
 
@@ -84,6 +90,10 @@ CONTENTS
   linux_amd64_build.sh -- Linux AMD64 build script for GCC.
 
   mac64_build.sh -- Mac AMD64 build script for clang.
+
+  unix_emulation_arch64_build.sh -- Builds the same demo as
+    linux_amd64_build.sh but runs with getentropy() from unistd.h, instead of
+    Jytter, and runs on all 64-bit UNIX platforms.
 
   win32_build.sh -- Windows build batch file for MinGW.
 
